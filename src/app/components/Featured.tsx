@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import { featuredProducts } from '../data'
+import Link from 'next/link'
 
 const Featured = () => {
   return (
-    <div className='w-screen overflow-auto text-red-500'>
+    <div className='w-full overflow-auto text-red-500'>
         {/*wrapper*/}
         <div className='w-max flex'>
 
@@ -23,7 +24,7 @@ const Featured = () => {
                    <h3 className='text-xl font-bold uppercase '>{item.title}</h3>
                    <p className='p-4 2xl:p-8'>{item.desc}</p>
                    <span className='font-bold text-md'>{item.price}$</span>
-                   <button className='bg-red-500 text-white p-2 rounded'>Add To Cart</button>
+                   <button className='bg-red-500 text-white p-2 rounded'><Link href="/menu/cart">Add To Cart</Link></button>
                 </div>
             </div>
             ))}

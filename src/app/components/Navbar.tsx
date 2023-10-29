@@ -13,9 +13,8 @@ const Navbar = () => {
         {/* Left Link*/}
         
         <div className='hidden md:flex gap-4 flex-1'>
-            <Link href="/">Homepage</Link>
-            <Link href="/menu">Menu</Link>
-            <Link href="/">Contact</Link>
+            
+            <Link href="/menu"  className='hover:text-green-500 duration-300 font-medium text-xl'>Menu</Link>
         </div>
         
         <div className='flex-1 md:text-center font-bold text-xl'>
